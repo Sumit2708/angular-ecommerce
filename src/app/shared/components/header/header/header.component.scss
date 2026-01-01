@@ -1,0 +1,76 @@
+.header {
+  height: 68px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  gap: 32px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* LOGO */
+.logo a {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #111827;
+  letter-spacing: 0.3px;
+}
+
+/* SEARCH */
+.search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 14px;
+  outline: none;
+}
+
+.search input:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.actions a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* CART */
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 999px;
+}

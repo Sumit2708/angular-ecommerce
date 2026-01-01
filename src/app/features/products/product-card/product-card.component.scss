@@ -1,0 +1,71 @@
+.card {
+  height: 320px; /* 🔑 fixed height */
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.4;
+  height: 40px;
+  overflow: hidden;
+}
+
+
+img {
+  height: 160px;
+  object-fit: contain;
+}
+
+.image-wrapper {
+  height: 160px;
+  background: #f9fafb;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.price {
+  margin-top: auto; /* 🔥 MAGIC LINE */
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+
+
+.rating {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.rating span {
+  color: #6b7280;
+  font-size: 13px;
+}

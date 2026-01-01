@@ -1,0 +1,26 @@
+<header class="header">
+  <!-- Logo -->
+  <div class="logo">
+    <a routerLink="/products">EZStore</a>
+  </div>
+
+  <!-- Search -->
+  <div class="search">
+    <input
+      type="text"
+      placeholder="Search products"
+       [value]="search.query()"
+  (input)="search.query.set($any($event.target).value)"
+    />
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <a routerLink="/products">Products</a>
+
+    <a routerLink="/cart" class="cart">
+      <span class="icon">🛒</span>
+      <span class="badge"> {{ cartStore.totalItems() }}</span>
+    </a>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+@if (loading) {
+<p>Loading product...</p>
+} @else {
+<div class="product-page">
+  <!-- IMAGE PANEL -->
+  <div class="image-panel">
+    <img class="img" [src]="product.image" [alt]="product.title" />
+  </div>
+
+  <!-- INFO PANEL -->
+  <div class="info-panel">
+    <h1>{{ product.title }}</h1>
+
+    <p class="description">
+      {{ product.description }}
+    </p>
+
+    <p class="price">₹ {{ product.price }}</p>
+
+    <div class="qty">
+      <button (click)="decrease()">−</button>
+      <span>{{ quantity }}</span>
+      <button (click)="increase()">+</button>
+    </div>
+
+    <div class="btn-container">
+      <button class="add-btn" (click)="cartStore.addToCart(product, quantity)">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+}

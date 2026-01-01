@@ -1,0 +1,29 @@
+.main-content {
+  padding: 24px 32px;
+  min-height: 81vh;
+  background-color: #f9fafb;
+}
+
+.main-content {
+  min-height: calc(100vh - 68px);
+  background: #f9fafb;
+  padding: 32px 40px;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  background: #111827;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}

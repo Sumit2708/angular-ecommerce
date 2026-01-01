@@ -1,0 +1,25 @@
+<h2 class="title">Products</h2>
+
+@if (loading) {
+<p>Loading products...</p>
+} @else {
+
+<div class="filters">
+  <select
+    [(ngModel)]="selectedCategory"
+    (ngModelChange)="onCategoryChange($event)"
+  >
+    <option value="all">All Categories</option>
+
+    @for (cat of categories; track cat) {
+    <option [value]="cat">{{ cat }}</option>
+    }
+  </select>
+</div>
+
+<div class="grid">
+  @for (product of products; track product.id) {
+  <app-product-card [product]="product"></app-product-card>
+  }
+</div>
+}

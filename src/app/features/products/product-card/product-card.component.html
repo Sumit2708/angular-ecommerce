@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card" [routerLink]="['/products', product.id]">
+  <div class="image-wrapper">
+    <img [src]="product.image" />
+  </div>
+
+  <h3>{{ product.title }}</h3>
+  <div class="rating">
+  ⭐ {{ product.rating?.rate }} / 5
+  <span>({{ product.rating?.count }} reviews)</span>
+</div>
+
+  <p class="price">₹ {{ product.price }}</p>
+</div>
+
+</div>
